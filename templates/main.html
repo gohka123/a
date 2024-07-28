@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Сайт</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+</head>
+
+<body>
+    <form action="test" method="post">
+
+        <div>
+            <label class="desc" id="title1" for="Field1">Full Name</label>
+            <div>
+                <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title3" for="Field3">
+                Email
+            </label>
+            <div>
+                <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+            </div>
+        </div>
+
+        <div>
+            <label class="desc" id="title4" for="Field4">
+                Short "About myself"
+            </label>
+
+            <div>
+                <textarea id="Field4" name="Field4" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+            </div>
+        </div>
+
+        <div>
+            <fieldset>
+
+                <legend id="title5" class="desc">
+                    Who you want to be?
+                </legend>
+
+                <div>
+                    <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                    <div>
+                        <input id="Field5_0" name="Field5" type="radio" value="gamemod" tabindex="5"
+                            checked="checked">
+                        <label class="choice" for="Field5_0">In-Game moderator</label>
+                    </div>
+                    <div>
+                        <input id="Field5_1" name="Field5" type="radio" value="forummod" tabindex="6">
+                        <label class="choice" for="Field5_1"></label>Forum moderator
+                    </div>
+                    <div>
+                        <input id="Field5_2" name="Field5" type="radio" value="support" tabindex="7">
+                        <label class="choice" for="Field5_2">Support</label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend id="title6" class="desc">
+                    Wich payment type you would like to recieve
+                </legend>
+                <div>
+                    <div>
+                        <input id="Field6" name="Field6" type="checkbox" value="ingamecurrency" tabindex="8">
+                        <label class="choice" for="Field6">In-Game currency</label>
+                    </div>
+                    <div>
+                        <input id="Field7" name="Field7" type="checkbox" value="ingamerewards" tabindex="9">
+                        <label class="choice" for="Field7">In-Game rewards</label>
+                    </div>
+                    <div>
+                        <input id="Field8" name="Field8" type="checkbox" value="payment" tabindex="10">
+                        <label class="choice" for="Field8">Real payment</label>
+                        </span>
+                    </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <label class="desc" id="title106" for="Field106">
+                How youre feeling?
+            </label>
+            <div>
+                <select id="Field106" name="Field106" class="field select medium" tabindex="11">
+                    <option value="good">Am all good😎</option>
+                    <option value="ok">I am okay😊</option>
+                    <option value="sad">I feel sad😢</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <input id="saveForm" name="saveForm" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
